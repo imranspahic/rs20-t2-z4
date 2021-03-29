@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+            <URL value="@/css/style.css" />
+    </stylesheets>
+   <top>
+      <HBox maxHeight="100.0" prefHeight="70.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Add">
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding></Button>
+            <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Remove">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding></Button>
+            <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+            <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="?">
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding></Button>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="35.0" right="20.0" top="15.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="naslov" text="Data" />
+            <Label styleClass="kategorije" text="Cost">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label styleClass="kategorije" text="Goods">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label styleClass="kategorije" text="Employees">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+            <Label styleClass="kategorije" text="Departments">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Label>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <GridPane BorderPane.alignment="TOP_LEFT">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/img/graph.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
